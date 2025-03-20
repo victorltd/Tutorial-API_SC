@@ -189,6 +189,21 @@ _É possiível também fazer todas essas execuções de uma única vez por meio 
 api-sanity-checker -lib NAME -d descriptor.xml -gen -build -run
 ```
 
+## 6. Interpretando os Resultados
+Após a execução dos testes, você pode abrir o arquivo test_results.html no navegador para visualizar os problemas detectados.
+
+*Inclusive, um dos testes irá falhar, para demonstrar um erro de falha de segmentação*
+
+Tipos de problemas que podem ser encontrados:
+
+- Segfault (falha de segmentação)
+- Abort (falha de execução)
+- Sinais emitidos (FPE, BUS, ILL, etc.)
+- Saída com código de erro
+- Programa travado (hanging)
+Se algum desses problemas for detectado, é necessário revisar a implementação da biblioteca.
+
+
 ## Referências:
 
 
