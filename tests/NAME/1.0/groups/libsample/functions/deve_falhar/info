@@ -1,0 +1,5 @@
+Library: NAME-1.0
+Interface: deve_falhar ()
+Symbol: deve_falhar
+Header: libsample.h
+Shared Object: libsample.so

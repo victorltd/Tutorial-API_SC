@@ -1,0 +1,5 @@
+Library: NAME-1.0
+Interface: soma (int a, int b)
+Symbol: soma
+Header: libsample.h
+Shared Object: libsample.so

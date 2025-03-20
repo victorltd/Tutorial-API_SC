@@ -1,0 +1,5 @@
+Library: NAME-1.0
+Interface: divide (int a, int b)
+Symbol: divide
+Header: libsample.h
+Shared Object: libsample.so

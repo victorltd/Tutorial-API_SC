@@ -1,0 +1,5 @@
+Library: NAME-1.0
+Interface: concatena (char const* str1, char const* str2)
+Symbol: concatena
+Header: libsample.h
+Shared Object: libsample.so

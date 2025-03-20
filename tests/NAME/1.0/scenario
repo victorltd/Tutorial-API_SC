@@ -1,0 +1,4 @@
+concatena;tests/NAME/1.0/groups/libsample/functions/concatena
+deve_falhar;tests/NAME/1.0/groups/libsample/functions/deve_falhar
+divide;tests/NAME/1.0/groups/libsample/functions/divide
+soma;tests/NAME/1.0/groups/libsample/functions/soma
