@@ -75,7 +75,7 @@ Agora que todas as dependências foram instaladas, podemos configurar o API Sani
 ### 3.1. Baixando o API Sanity Checker
 Clone o repositório oficial do GitHub:
 ```
-git clone git://github.com/lvc/api-sanity-checker
+git clone https://github.com/lvc/api-sanity-checker.git
 ```
 Entre no diretório do projeto:
 ```
