@@ -95,7 +95,7 @@ Depois da instalação, execute o seguinte comando para confirmar que o API Sani
 api-sanity-checker --version
 ```
 
-A saída é para ser algo similar a isso: 
+A saída édeverá ser similar a essa: 
 ```
 API Sanity Checker 1.98.8
 Copyright (C) 2018 Andrey Ponomarenko's ABI Laboratory
@@ -104,4 +104,78 @@ This program is free software: you can redistribute it and/or modify it.
 
 Written by Andrey Ponomarenko.
 ```
+## Gerando e Executando Testes
 
+Agora que o *API Sanity Checker* está pronto para uso, vamos gerar e rodar testes em uma biblioteca C/C++.
+Antes de gerar os testes, é necessário criar um arquivo XML que descreve a versão da biblioteca e os caminhos para os arquivos de cabeçalho e bibliotecas compartilhadas.
+
+Exemplo de arquivo descriptor.xml:
+
+```
+  <version>
+            1.0
+        </version>
+
+        <headers>
+            /home/victor/Documentos/Projetos/api-sanity-checker/PASTA
+        </headers>
+
+        <libs>
+            /home/victor/Documentos/Projetos/api-sanity-checker/PASTA
+        </libs>
+```
+
+É possível testar e verificar o uso da ferramenta ao executar:
+
+```
+api-sanity-checker -test
+```
+Serão criadas algumas pastas, onde irá gerar um pequeno teste, e será possível já ver a ferramenta funcionar.
+
+
+## 5.2 Gerando testes
+
+Para seguir nesse passo:
+### 5.2.1 Clone esse repositório e cole a pasta inteira para a pasta onde estão os arquivos do API.
+
+### 5.2.2 Mova o arquivo descriptor.xml que está dentro da pasta copiada pasta para a pasta raiz do API
+
+A estrutura de pastas deve ficar dessa maneira:
+
+
+
+
+Para gerar um conjunto de testes automatizados para os arquivos que criamos:
+
+```
+api-sanity-checker -lib NAME -d descriptor.xml -gen
+```
+## 5.3. Compilando os Testes
+Depois de gerar os testes, compile-os usando:
+```
+api-sanity-checker -lib NAME -d descriptor.xml -build
+```
+
+## 5.3. Compilando os Testes
+Depois de gerar os testes, compile-os usando:
+```
+api-sanity-checker -lib NAME -d descriptor.xml -build
+```
+
+## 5.4. Executando os Testes
+Para rodar os testes gerados e verificar possíveis falhas:
+```
+api-sanity-checker -lib NAME -d descriptor.xml -run
+```
+
+_É possiível também fazer todas essas execuções de uma única vez por meio do comando:_
+```
+api-sanity-checker -lib NAME -d descriptor.xml -gen -build -run
+```
+
+## Referências:
+
+
+- Documentação oficial: https://lvc.github.io/api-sanity-checker/
+- Repositório da ferramenta: https://github.com/lvc/api-sanity-checker
+- Artigo: https://www.devzery.com/post/api-sanity-checker-guide-for-testing-c-c-libraries
