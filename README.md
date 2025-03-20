@@ -142,6 +142,7 @@ Para seguir nesse passo:
 
 A estrutura de pastas deve ficar dessa maneira:
 
+```
 ├── INSTALL
 ├── LICENSE
 ├── Makefile
@@ -157,7 +158,7 @@ A estrutura de pastas deve ficar dessa maneira:
 │   ├── libsample.so
 │   ├── Makefile
 │   ├── version
-
+```
 
 
 Para gerar um conjunto de testes automatizados para os arquivos que criamos:
