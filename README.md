@@ -142,6 +142,21 @@ Para seguir nesse passo:
 
 A estrutura de pastas deve ficar dessa maneira:
 
+├── INSTALL
+├── LICENSE
+├── Makefile
+├── Makefile.pl
+├── README.md
+├── api-sanity-checker.pl
+├── doc/
+├── modules/
+├── Tutorial-API_SC/
+│   ├── descriptor.xml
+│   ├── libsample.c
+│   ├── libsample.h
+│   ├── libsample.so
+│   ├── Makefile
+│   ├── version
 
 
 
